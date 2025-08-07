@@ -42,7 +42,7 @@ const EditTask = () => {
       task_description: taskDescription,
     };
 
-    axios.put('http://localhost:8000/api/tasks/'+ id + '/', newTask)
+    axios.put('https://taskmanager-1dgi.onrender.com/api/tasks/'+ id + '/', newTask)
       .then((response) => {
         console.log('Task created:', response.data);
         document.getElementById('div1').innerHTML = `<p class="alert alert-success w-75 mx-auto">Task Updated</p>`
