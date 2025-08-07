@@ -62,7 +62,7 @@ export function TaskBoard()
                                 <td>{val.task_name}</td>
                                 <td>{val.task_description}</td>
                                 <td class="d-flex justify-content-around">
-                                    <Link to={`http://localhost:3000/edit/${val.id}`}>
+                                    <Link to={`https://task-manager-fe-lake.vercel.app/edit/${val.id}`}>
                                         <button class="btn btn-success">Edit</button>
                                     </Link>
                                     <div>
